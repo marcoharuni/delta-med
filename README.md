@@ -7,7 +7,7 @@ delta-med is installable software that lets a hospital, clinic, or laboratory ru
 
 ## Why delta-med
 
-Healthcare providers currently face two poor options: send patient data to a foreign cloud AI service, or go without AI because building it in-house is too difficult. delta-med offers a third option: a self-contained, auditable system designed specifically for medicine and deployable on local infrastructure.
+Healthcare providers and AI Labs currently face two poor options: send patient data to a foreign cloud AI service, or go without AI because building it in-house is too difficult. delta-med offers a third option: a self-contained, auditable system designed specifically for medicine and deployable on local infrastructure.
 
 ## Key features
 
