@@ -2,28 +2,41 @@
 
 **Private medical AI that runs entirely on your own hardware.**
 
-delta-med is installable software that lets a hospital, clinic, or laboratory run medical AI on-site. It reads scans, answers clinical questions, and transcribes notes without patient data ever leaving the building. A clinician reviews every output before it reaches a patient, and every inference is logged.
+delta-med is open-source software that lets a hospital, clinic, or laboratory run medical AI on-site. Patient data never leaves the building. A clinician reviews every output before it is used, and every action is logged.
 
+> Research software. Not a certified medical device. Not for clinical use unless validated and approved at your site.
 
 ## Why delta-med
 
-Healthcare providers and AI Labs currently face two poor options: send patient data to a foreign cloud AI service, or go without AI because building it in-house is too difficult. delta-med offers a third option: a self-contained, auditable system designed specifically for medicine and deployable on local infrastructure.
+Healthcare providers and AI labs usually face two poor options: send patient data to a foreign cloud AI service, or go without AI because building a safe system in-house is too hard. delta-med is a third option: a self-contained, auditable system built for medicine that runs on local infrastructure.
 
 ## Key features
 
 - **Fully local.** Inference runs on hardware you own. No patient data is sent to external services.
-- **Human in the loop.** AI output is held as a suggestion until a clinician explicitly approves it.
-- **Validated models only.** A model cannot serve requests until it passes a validation run. Versions are pinned, with no silent updates.
-- **Immutable audit trail.** Every inference is recorded, including which model version handled which encounter.
-- **Grounded answers.** Responses draw on version-pinned clinical guidelines and cite their source.
+- **Human in the loop.** AI output stays a suggestion until a clinician explicitly approves it.
+- **Validated models only.** A model cannot serve requests until it passes validation. Versions are pinned, with no silent updates.
+- **Tamper-evident audit trail.** Every action is recorded, including which model version handled which encounter, and the log can be verified offline.
+- **Grounded answers.** Responses draw on version-pinned clinical guidelines and cite their source. When evidence is thin, the system says so.
 - **Works with existing systems.** Supports FHIR, HL7, and DICOM so it can sit alongside current hospital software.
-- **Offline-capable.** Designed for modest hardware and unreliable connectivity.
+- **Offline-capable.** Built for modest hardware and unreliable connectivity.
+- **Swahili and English.** Designed for clinicians who work in both languages.
 
 ## Capabilities
 
 | Area | Examples |
 |---|---|
-| Clinical reasoning | Guideline-grounded question answering, triage and referral drafts |
+| Clinical reasoning | Guideline-grounded question answering, referral and note drafts |
 | Medical imaging | Chest X-ray and CT analysis, segmentation |
 | Voice | Clinical dictation and note transcription |
 
+## Contributing
+
+Contributions are welcome. Please open an issue before starting a large change. Never commit real patient data.
+
+## Security
+
+Report vulnerabilities privately using GitHub's private vulnerability reporting. Never include patient data in a report.
+
+## License
+
+Apache-2.0
